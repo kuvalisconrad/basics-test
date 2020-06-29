@@ -2,24 +2,28 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #61122f;
-    font-family: 'Oxygen', sans-serif; 
-}
-/** HEADER **/
-#header-nav {
+    font-family: 'Oxygen', sans-serif;
+  }
+  
+  /** HEADER **/
+  #header-nav {
     background-color: #f6b319;
     border-radius: 0;
     border: 0;
-}
-#logo-img {
+  }
+  
+  #logo-img {
     background: url('../images/restaurant-logo_large.png') no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
-}
-.navbar-brand {
+  }
+  
+  .navbar-brand {
     padding-top: 25px;
-}
-.navbar-brand h1 { /* Restaurant name */
+  }
+  
+  .navbar-brand h1 { /* Restaurant name */
     font-family: 'Lora', serif;
     color: #557c3e;
     font-size: 1.5em;
@@ -29,74 +33,104 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
-}
-.navbar-brand p { /* Kosher Cert */
-    color: 000;
+  }
+  .navbar-brand p { /* Kosher cert */
+    color: #000;
     text-transform: uppercase;
     font-size: .7em;
     margin-top: 15px;
-}
-.navbar-brand p span {/* K star */
+  }
+  .navbar-brand p span { /* Star-K */
     vertical-align: middle;
-}
-#nav-list a {
-    color: #951c49;
+  }
+  
+  #nav-list {
+    margin-top: 10px;
+  }
+  #nav-list a {
+    color: #951C49;
     text-align: center;
-}
-#nav-list a:hover {
-    background: #e7e7e7;
-} 
-#nav-list a span {
+  }
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  #nav-list a span {
     font-size: 1.8em;
-}
-#phone {
+  }
+  
+  #phone {
     margin-top: 5px;
-}
-#phone a {
+  }
+  #phone a { /* Phone number */
     text-align: right;
     padding-bottom: 0;
-}
-#phone div {
+  }
+  #phone div { /* We Deliver */
     color: #557c3e;
     text-align: right;
     padding-right: 15px;
-}
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  }
+  
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 1px solid #61122f;
-}
-.navbar-header button.navbar-toggle {
+  }
+  .navbar-header button.navbar-toggle {
     clear: both;
     margin-top: -30px;
-}
-/* END HEADER */
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
-  #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
   }
-  /* End Header */
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
+  /* END HEADER */
+  
+  /* HOME PAGE */
+  .container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+  
+  /* END HOME PAGE */
+  
+  /********** Large devices only **********/
+  @media (min-width: 1200px) {
+    .container .jumbotron {
+      background: url('../images/jumbotron_1200.jpg') no-repeat;
+      height: 675px;
+    }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #logo-img {
+      background: url('../images/restaurant-logo_medium.png') no-repeat;
+      width: 100px;
+      height: 100px;
+      margin: 5px 5px 5px 0;
+    }
+    /* End Header */
+  
+    /* Home Page */
+    .container .jumbotron {
+      background: url('../images/jumbotron_992.jpg') no-repeat;
+      height: 558px;
+    }
+    /* End Home Page */
+  }
+  
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page */
+    .container .jumbotron {
+      background: url('../images/jumbotron_768.jpg') no-repeat;
+      height: 432px;
+    }
+    /* End Home Page */
+  
+  }
+  
+  /********** Extra small devices only **********/
+  @media (max-width: 767px) {
     /* Header */
     .navbar-brand {
       padding-top: 10px;
@@ -139,4 +173,11 @@ body {
     }
     /* End Header */
   
-}
+    /* Home Page */
+    .container .jumbotron {
+      margin-top: 30px;
+      padding: 0;
+    }
+  
+  }
+  
